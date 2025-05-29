@@ -8,18 +8,31 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: "Courier New", monospace;
+      background-color: #2d2a2e;
+      color: #fcfcfa;
+    }
+    .nav {
+      background-color: #1e1e1e;
+      padding: 1rem;
+      text-align: center;
+    }
+    .nav a {
+      color: #a9dc76;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .nav a:hover {
+      color: #ffd866;
     }
     .container {
       max-width: 800px;
-      margin: 50px auto;
-      background-color: #fff;
+      margin: 30px auto;
+      background-color: #403e41;
       padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     }
     img.profile-pic {
       width: 150px;
@@ -27,23 +40,19 @@
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 20px;
-      border: 3px solid #3498db;
+      border: 3px solid #fc9867;
     }
-    h1 {
-      color: #2c3e50;
-      margin-bottom: 10px;
-    }
-    h2 {
-      color: #16a085;
-      margin-bottom: 20px;
+    h1, h2, h3 {
+      color: #ab9df2;
     }
     p {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.6;
+      color: #fcfcfa;
     }
     .btn {
-      background-color: #3498db;
-      color: white;
+      background-color: #78dce8;
+      color: #1e1e1e;
       padding: 10px 20px;
       margin-top: 20px;
       border: none;
@@ -52,12 +61,20 @@
       font-size: 16px;
     }
     .btn:hover {
-      background-color: #2980b9;
+      background-color: #ffd866;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="nav">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#work">Work History</a>
+    <a href="#interests">Interests</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="container" id="about">
     <img src="image.png" alt="Mohammad Naqiuddin" class="profile-pic">
     <h1>Mohammad Naqiuddin</h1>
     <h2>Database Administrator (MySQL)</h2>
@@ -65,7 +82,28 @@
       Welcome to my profile! I am a passionate database administrator specializing in <strong>MySQL</strong>. <br>
       I love working with databases and also enjoy programming in <strong>Python</strong>.
     </p>
-    <button class="btn" onclick="showMessage()">Say Hello</button>
+    <a href="https://github.com/Naqi51"><button class="btn">Visit my Github</button></a>
+  </div>
+
+  <div class="container" id="education">
+    <h3>🎓 Education</h3>
+    <p>Bachelor of Commerce from Satavahana University, Karimnagar</p>
+  </div>
+
+  <div class="container" id="work">
+    <h3>💼 Work History</h3>
+    <p>Database Administrator based in Bangalore</p>
+  </div>
+
+  <div class="container" id="interests">
+    <h3>📚 Interests</h3>
+    <p>Learning new skills, upgrading myself, and reading books</p>
+  </div>
+
+  <div class="container" id="contact">
+    <h3>📞 Contact Me</h3>
+    <p>Phone: +91 8106514117</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammad-naqiuddin-388778336" target="_blank" style="color:#78dce8;">linkedin.com/in/mohammad-naqiuddin-388778336</a></p>
   </div>
 
   <script>
