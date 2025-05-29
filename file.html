@@ -1,71 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mohammad Naqiuddin - Profile</title>
   <style>
+    /* Color palette - Grueling Hare inspired */
+    :root {
+      --bg-dark: #1a1c1f;
+      --bg-panel: #2b2f33;
+      --steel: #6c757d;
+      --burnt-orange: #d96b27;
+      --text-light: #eaeaea;
+      --highlight: #ffb562;
+      --accent: #d96b27;
+    }
+
     body {
       margin: 0;
       padding: 0;
       font-family: "Courier New", monospace;
-      background-color: #2d2a2e;
-      color: #fcfcfa;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
     }
+
     .nav {
-      background-color: #1e1e1e;
+      background-color: #131619;
       padding: 1rem;
       text-align: center;
+      border-bottom: 1px solid var(--steel);
     }
+
     .nav a {
-      color: #a9dc76;
+      color: var(--accent);
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
+
     .nav a:hover {
-      color: #ffd866;
+      color: var(--highlight);
     }
+
     .container {
       max-width: 800px;
       margin: 30px auto;
-      background-color: #403e41;
+      background-color: var(--bg-panel);
       padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+      border: 1px solid var(--steel);
     }
+
     img.profile-pic {
       width: 150px;
       height: 150px;
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 20px;
-      border: 3px solid #fc9867;
+      border: 3px solid var(--accent);
     }
+
     h1, h2, h3 {
-      color: #ab9df2;
+      color: var(--highlight);
+      margin-top: 0;
     }
+
     p {
       font-size: 16px;
       line-height: 1.6;
-      color: #fcfcfa;
+      color: var(--text-light);
     }
+
+    a {
+      color: var(--accent);
+    }
+
+    a:hover {
+      color: var(--highlight);
+    }
+
     .btn {
-      background-color: #78dce8;
-      color: #1e1e1e;
+      background-color: var(--accent);
+      color: var(--bg-dark);
       padding: 10px 20px;
       margin-top: 20px;
       border: none;
       border-radius: 6px;
       cursor: pointer;
       font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
+
     .btn:hover {
-      background-color: #ffd866;
+      background-color: var(--highlight);
     }
   </style>
 </head>
 <body>
+
   <div class="nav">
     <a href="#about">About</a>
     <a href="#education">Education</a>
@@ -79,10 +114,12 @@
     <h1>Mohammad Naqiuddin</h1>
     <h2>Database Administrator (MySQL)</h2>
     <p>
-      Welcome to my profile! I am a passionate database administrator specializing in <strong>MySQL</strong>. <br>
+      Welcome to my profile! I am a passionate database administrator specializing in <strong>MySQL</strong>.<br>
       I love working with databases and also enjoy programming in <strong>Python</strong>.
     </p>
-    <a href="https://github.com/Naqi51" target="_blank" rel="noopener noreferrer"><button class="btn">Visit my Github</button></a>
+    <a href="https://github.com/Naqi51" target="_blank" rel="noopener noreferrer">
+      <button class="btn">Visit my Github</button>
+    </a>
   </div>
 
   <div class="container" id="education">
@@ -92,18 +129,23 @@
 
   <div class="container" id="work">
     <h3>💼 Work History</h3>
-    <p>Database Administrator  in Bangalore</p>
+    <p>Database Administrator in Bangalore</p>
   </div>
 
   <div class="container" id="interests">
     <h3>📚 Interests</h3>
-    <p>Learning new skills, upgrading myself, and reading books</p>
+    <p>All about travelling, cricket, learning new skills and reading books.</p>
   </div>
 
   <div class="container" id="contact">
     <h3>📞 Contact Me</h3>
-    <p>Phone: <span style="color:#78dce8;">+91 8106514117</span></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammad-naqiuddin-388778336" target="_blank" rel="noopener noreferrer" style="color:#78dce8;">linkedin.com/in/mohammad-naqiuddin-388778336</a></p>
+    <p>Phone: <span style="color: var(--highlight);">+91 8106514117</span></p>
+    <p>
+      LinkedIn: 
+      <a href="https://www.linkedin.com/in/mohammad-naqiuddin-388778336" target="_blank" rel="noopener noreferrer">
+        linkedin.com/in/mohammad-naqiuddin-388778336
+      </a>
+    </p>
   </div>
 
   <script>
